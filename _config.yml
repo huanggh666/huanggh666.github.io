@@ -1,7 +1,7 @@
 # Site settings
 title: HAI
 email: huanggh666@163.com
-description: HAI AI enthusiast
+description: An AI enthusiast.
 # > # this means to ignore newlines until "baseurl:"
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
