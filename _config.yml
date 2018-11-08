@@ -1,1 +1,23 @@
-theme: jekyll-theme-architect
+# Site settings
+title: HAI
+email: huanggh666@163.com
+description: HAI AI enthusiast
+# > # this means to ignore newlines until "baseurl:"
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+#   Write an awesome description for your new site here. You can edit this
+
+# baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+github_username:  ihuanggh
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+
+# highlight
+# 本地用rouge, github上用pygments
+# highlighter: pygments
+# highlighter: rouge
+# highlighter: false
