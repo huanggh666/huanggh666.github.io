@@ -5,6 +5,10 @@
     <link rel="shortcut icon" href="source/2.jpg">
     <title>HAI</title>
     <style>
+        a:link, a:visited {
+            text-decoration: none; /*超链接无下划线*/
+        }
+
         .setcenter {
             text-align: center
         }
@@ -19,6 +23,36 @@
             width: 100%;
             height: auto
         }
+
+        .container {
+            clear: both;
+            overflow: hidden;
+            padding: 0 130px 0 100px;
+        }
+
+            .container .left {
+                width: 200px;
+                float: left;
+                height: 100%;
+                margin-left: -100%;
+                position: relative;
+                left: -100px;
+            }
+
+            .container .center {
+                height: 100%;
+                float: left;
+                width: 100%;
+            }
+
+            .container .right {
+                width: 200px;
+                float: left;
+                height: 100%;
+                margin-left: -130px;
+                position: relative;
+                right: -130px;
+            }
     </style>
 </head>
 <body>
@@ -32,7 +66,7 @@
             <tr>
                 <td>
                     <a href="https://www.baidu.com">
-                        <img src="source/baidu.png" align="bottom" border="0" />
+                        <img src="source/baidu.png" align="middle" border="0" />
                     </a>
                 </td>
                 <td><br /><input type="text" id="search1" name="word" size="30" /></td>
@@ -46,18 +80,48 @@
             <tr>
                 <td>
                     <a href="https://www.google.com.hk/">
-                        <img src="source/google.png" alt="google" align="bottom" border="0" />
+                        <img src="source/google.png" alt="google" align="middle" border="0" />
                     </a>
                 </td>
                 <td><input type="text" name="q" size="30"></td>
                 <td><input type="submit" value="谷歌搜索"></td>
-                </td>
             </tr>
         </table>
     </form>
     <br />
-    <div class="setcenter">
-        <img src="source/0.jpg" height="500"/>
+    <div class="container">
+        <div class="center">
+            <div class="setcenter">
+                <img src="source/0.jpg" height="500" />
+            </div>
+        </div>
+        <div class="left">
+            <div class="setcenter">
+                <a href="http://rs.xidian.edu.cn/forum.php">
+                    <img src="http://rs.xidian.edu.cn/favicon.ico" />&nbsp;睿思
+                </a>
+                <br /><br />
+                <a href="https://ipp.cbica.upenn.edu/login">
+                    <img src="https://ipp.cbica.upenn.edu/favicon.ico" onerror="nofind()" height="15" />
+                    CBICA-Brats2017
+                </a>
+                <br /><br />
+                <a href="https://www.smir.ch/BRATS/Start2015">
+                    <img src="https://www.smir.ch/BRATS/Start2015/favicon.ico" onerror="nofind()" height="15" />
+                    Smir-Brats2015
+                </a>
+            </div>
+        </div>
     </div>
+    <script type="text/javascript">
+        function nofind() {
+            var img = event.srcElement;
+            img.src = "source/4.png"; //替换的图片
+            img.onerror = null; //控制不要一直触发错误
+        }
+    </script>
 </body>
 </html>
+
+
+
