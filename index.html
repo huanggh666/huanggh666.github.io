@@ -30,29 +30,29 @@
             padding: 0 130px 0 100px;
         }
 
-        .container .left {
-            width: 200px;
-            float: left;
-            height: 100%;
-            margin-left: -100%;
-            position: relative;
-            left: -100px;
-        }
+            .container .left {
+                width: 200px;
+                float: left;
+                height: 100%;
+                margin-left: -100%;
+                position: relative;
+                left: -100px;
+            }
 
-        .container .center {
-            height: 100%;
-            float: left;
-            width: 100%;
-        }
+            .container .center {
+                height: 100%;
+                float: left;
+                width: 100%;
+            }
 
-        .container .right {
-            width: 200px;
-            float: left;
-            height: 100%;
-            margin-left: -130px;
-            position: relative;
-            right: -130px;
-         }
+            .container .right {
+                width: 200px;
+                float: left;
+                height: 100%;
+                margin-left: -130px;
+                position: relative;
+                right: -130px;
+            }
     </style>
 </head>
 <body>
@@ -61,23 +61,30 @@
             HAI
         </h1>
     </div>
-    <form id="bdfm" target="_blank" name="bdfm" method="get" action="https://www.baidu.com/s">
-        <table align="center">
-            <tr>
+    <table align="center">
+        <tr>
+            <form id="bdfm" target="_blank" name="bdfm" method="get" action="https://www.baidu.com/s">
                 <td>
                     <a href="https://www.baidu.com" target="_blank">
                         <img src="source/baidu.png" align="middle" border="0" />
                     </a>
                 </td>
-                <td><br /><input type="text" id="search1" name="word" size="30" /></td>
+                <td><br /><input type="text" id="search1" name="wd" size="30" /></td>
                 <td><br /><input type="submit" value="百度搜索" /></td>
-            </tr>
-        </table>
-    </form>
-    <br />
-    <form action="https://www.google.com.hk/search" target="_blank">
-        <table align="center">
-            <tr>
+            </form>
+            <form id="bdfm" target="_blank" name="bdfm" method="get" action="https://xueshu.baidu.com/s">
+                <td>
+                    &emsp;&emsp;
+                    <a href="https://xueshu.baidu.com" target="_blank">
+                        <img src="source/xueshu_logo.png" align="middle" border="0" />
+                    </a>
+                </td>
+                <td><br /><input type="text" id="search1" name="wd" size="30" /></td>
+                <td><br /><input type="submit" value="百度学术" /></td>
+            </form>
+        </tr>
+        <tr>
+            <form action="https://www.google.com.hk/search" target="_blank">
                 <td>
                     <a href="https://www.google.com.hk/" target="_blank">
                         <img src="source/google.png" alt="google" align="middle" border="0" />
@@ -85,9 +92,19 @@
                 </td>
                 <td><input type="text" name="q" size="30"></td>
                 <td><input type="submit" value="谷歌搜索"></td>
-            </tr>
-        </table>
-    </form>
+            </form>
+            <form action="https://scholar.google.com.hk/scholar" target="_blank">
+                <td>
+                    &emsp;&emsp;
+                    <a href="https://scholar.google.com.hk/" target="_blank">
+                        <img src="source/scholar_logo.png" alt="google" align="middle" border="0" />
+                    </a>
+                </td>
+                <td><input type="text" name="q" size="30"></td>
+                <td><input type="submit" value="谷歌学术"></td>
+            </form>
+        </tr>
+    </table>
     <br />
     <div class="container">
         <div class="center">
