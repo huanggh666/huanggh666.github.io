@@ -1,3 +1,3 @@
 # About
 [HAI](index.html)  
-This is my blog.
+This is my homepage.
