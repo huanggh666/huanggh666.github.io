@@ -56,9 +56,17 @@
     </style>
 </head>
 <body>
-    <div class="setcenter">
+    <div>
+        <i class="el-cloud"></i>
+        <iframe id="tianqi" scrolling="no" frameborder="0" allowtransparency="true"
+            width=200 height=24 marginwidth=0 marginheight=0 hspace=0 vspace=0 align="left"
+            src="http://www.tianqi.com/index.php?c=code&a=getcode&id=34&h=25&w=280">
+        </iframe>
+        <div id="time"></div>
+    </div>
+    <div class="setcenter" >
         <h1>
-            HAI
+            <font color="#DAA520">___---___ HAI ___---___</font>
         </h1>
     </div>
     <table align="center">
@@ -151,6 +159,28 @@
             img.src = "source/4.png"; //替换的图片
             img.onerror = null; //控制不要一直触发错误
         }
+    </script>
+    <script language="javascript" type="text/javascript">
+        //js获取日期
+        function fix(x) {
+            if (x < 10) return "0" + x;
+            else return x;
+        }
+
+        function time() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = now.getMonth();
+            var date = now.getDate();
+            var hour = now.getHours();
+            var min = now.getMinutes();
+            var second = now.getSeconds();
+            var dt = "&nbsp;&nbsp;" + year + "年" + fix(month + 1) + "月" + fix(date) + "日 "
+                + fix(hour) + ":" + fix(min) + ":" + fix(second) + "  ";
+            //获取相应ID
+            document.getElementById("time").innerHTML = dt;
+        }
+        setInterval("time();", 1000)
     </script>
 </body>
 </html>
